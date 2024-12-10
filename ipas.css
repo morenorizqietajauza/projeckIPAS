@@ -1,0 +1,133 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #004d40, #009688);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffc107;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Main content */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #004d40;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Intro section */
+.intro p {
+    background: rgba(0, 150, 136, 0.1);
+    padding: 15px;
+    border-left: 5px solid #004d40;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team {
+    margin-top: 30px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    background: white;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffc107;
+}
+
+.member p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #004d40;
+}
+
+/* Photo Section */
+.photo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 5px solid #004d40;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 100%;
+        max-width: 300px;
+    }
+}
